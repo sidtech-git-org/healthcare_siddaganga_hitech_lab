@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     tailwind.config = {
       theme: {
@@ -26,43 +27,77 @@
 
   <style>
     body {
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     }
 
     section {
       scroll-margin-top: 88px;
     }
+
+    .ticker {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .ticker-track {
+      display: inline-block;
+      animation: tickerMove 18s linear infinite;
+    }
+
+    @keyframes tickerMove {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .animate-marquee {
+      animation: marquee 18s linear infinite;
+    }
   </style>
+
   <script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "MedicalLaboratory",
- "name": "Siddaganga Hi-Tech Diagnostic Center",
- "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "#352/2A, 9th Cross, P.J. Extension",
-   "addressLocality": "Davanagere",
-   "addressRegion": "Karnataka",
-   "postalCode": "577002",
-   "addressCountry": "IN"
- },
- "telephone": "+91-8192200377",
- "url": "https://www.siddagangadiagnostics.com"
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalLaboratory",
+    "name": "Siddaganga Hi-Tech Diagnostic Center",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "#352/2A, 9th Cross, P.J. Extension",
+      "addressLocality": "Davanagere",
+      "addressRegion": "Karnataka",
+      "postalCode": "577002",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-8192200377",
+    "url": "https://www.siddagangadiagnostics.com"
+  }
+  </script>
 </head>
 
 <body class="bg-white text-zinc-900 antialiased">
 
-
-  </div>
-
   <!-- Header -->
   <header class="sticky top-0 z-50 border-b border-zinc-200 bg-white/95 backdrop-blur">
     <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between gap-4">
-      <a href="#home" class="min-w-0">
-        <p class="text-lg sm:text-2xl font-black tracking-tight text-red-700 whitespace-nowrap">Siddaganga Hi-Tech
-          Diagnostics Center</p>
+      <a href="#about" class="min-w-0 flex items-center gap-3">
+        <img src="assets/img/image.png" alt="Siddaganga Hi-Tech Diagnostics Center Logo" class="h-10 sm:h-12 w-auto">
+        <p class="text-xl sm:text-3xl font-black tracking-tight text-red-700 whitespace-nowrap hidden sm:block">
+          Siddaganga Hi-Tech Diagnostics Center
+        </p>
       </a>
 
       <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-700">
@@ -72,14 +107,22 @@
       </nav>
 
       <div class="hidden md:flex items-center gap-3">
-        <a href="tel:+918192200377"
-          class="rounded-xl border border-zinc-300 px-4 py-2 text-sm font-semibold hover:border-zinc-400">Call</a>
         <a href="https://wa.me/918618404638" target="_blank" rel="noreferrer"
-          class="rounded-xl bg-red-700 px-4 py-2 text-sm font-semibold text-white hover:bg-red-800">WhatsApp</a>
+          class="flex items-center justify-center h-10 w-10 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-soft"
+          title="Chat on WhatsApp">
+
+          <!-- WhatsApp Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="h-5 w-5">
+            <path
+              d="M16.001 3C8.821 3 3 8.82 3 16c0 2.82.92 5.43 2.48 7.55L3 29l5.64-2.39A12.93 12.93 0 0016 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.4c-2.32 0-4.49-.7-6.31-1.9l-.45-.27-3.35 1.42.71-3.46-.29-.46A10.37 10.37 0 015.6 16c0-5.74 4.66-10.4 10.4-10.4S26.4 10.26 26.4 16 21.74 26.4 16 26.4zm5.71-7.77c-.31-.16-1.85-.91-2.13-1.01-.29-.11-.5-.16-.71.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.23-.67.08-.31-.16-1.31-.48-2.49-1.53-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.46-.54.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.54-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.61c-.21 0-.54.08-.83.39-.29.31-1.09 1.06-1.09 2.58s1.12 2.99 1.27 3.2c.16.21 2.2 3.35 5.33 4.69.75.32 1.34.51 1.8.65.76.24 1.46.21 2.01.13.61-.09 1.85-.75 2.11-1.47.26-.72.26-1.34.18-1.47-.08-.13-.29-.21-.6-.36z" />
+          </svg>
+
+        </a>
       </div>
 
-      <button id="menuBtn"
-        class="md:hidden rounded-xl border border-zinc-300 px-3 py-2 text-sm font-semibold">Menu</button>
+      <button id="menuBtn" class="md:hidden rounded-xl border border-zinc-300 px-3 py-2 text-sm font-semibold">
+        Menu
+      </button>
     </div>
 
     <div id="mobileMenu" class="hidden md:hidden border-t border-zinc-200 bg-white">
@@ -87,28 +130,53 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
-        <div class="grid grid-cols-2 gap-2 pt-2">
-          <a href="tel:+918192200377"
-            class="rounded-xl border border-zinc-300 px-4 py-2.5 text-center font-semibold">Call</a>
-          <a href="https://wa.me/918618404638" target="_blank" rel="noreferrer"
-            class="rounded-xl bg-red-700 px-4 py-2.5 text-center font-semibold text-white">WhatsApp</a>
+        <div class="grid grid-cols-1 gap-2 pt-2">
+          <a href="https://wa.me/918192200377" target="_blank" rel="noreferrer"
+            class="rounded-xl bg-red-700 px-4 py-2.5 text-center font-semibold text-white">
+            Call / WhatsApp +91 8618404638
+          </a>
         </div>
       </div>
     </div>
   </header>
 
   <!-- Hero -->
-  <section id="home" class="bg-gradient-to-b from-red-50 to-white">
+  <section id="about" class="bg-gradient-to-b from-red-50 to-white">
     <div class="mx-auto max-w-6xl px-4 py-16 sm:py-20">
-      <div class="grid gap-10 lg:grid-cols-[1.2fr_.8fr] items-center">
+      <div class="grid gap-10 lg:grid-cols-2 items-start">
+
+        <!-- Left -->
         <div>
-          <p
-            class="inline-flex rounded-full border border-red-100 bg-white px-4 py-2 text-sm font-semibold text-red-700 shadow-soft">
-            Trusted diagnostics services in Davanagere
-          </p>
-          <h1 class="mt-5 max-w-3xl text-4xl sm:text-5xl font-black tracking-tight text-zinc-900">
-            Reliable Diagnostics Center in Davanagere
+
+          <!-- Patient Note -->
+          <div class="mb-4 rounded-xl border border-red-200 bg-red-50 overflow-hidden">
+            <div class="flex items-center">
+              <div class="bg-red-600 text-white text-[10px] sm:text-xs font-bold px-3 py-2">
+                Note
+              </div>
+              <div class="flex-1 overflow-hidden">
+                <div class="flex-1 overflow-hidden">
+                  <div class="ticker text-[11px] sm:text-xs text-red-700 py-2">
+                    <div class="ticker-track">
+                      <span class="mx-6">Fasting tests: Come on empty stomach after 7 AM. Water can be consumed.</span>
+                      <span class="mx-6">ಉಪವಾಸ ಪರೀಕ್ಷೆಗಳು: ಬೆಳಗ್ಗೆ 7 ಗಂಟೆಯ ನಂತರ ಖಾಲಿ ಹೊಟ್ಟೆಯಲ್ಲಿ ಬನ್ನಿ. ನೀರು
+                        ಸೇವಿಸಬಹುದು.</span>
+
+                      <!-- Duplicate for smooth loop -->
+                      <span class="mx-6">Fasting tests: Come on empty stomach after 7 AM. Water can be consumed.</span>
+                      <span class="mx-6">ಉಪವಾಸ ಪರೀಕ್ಷೆಗಳು: ಬೆಳಗ್ಗೆ 7 ಗಂಟೆಯ ನಂತರ ಖಾಲಿ ಹೊಟ್ಟೆಯಲ್ಲಿ ಬನ್ನಿ. ನೀರು
+                        ಸೇವಿಸಬಹುದು.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="max-w-3xl text-3xl sm:text-4xl font-semibold tracking-tight text-zinc-900">
+            Trusted Diagnostics Center in Davanagere
           </h1>
+
           <p class="mt-5 max-w-2xl text-base sm:text-lg leading-8 text-zinc-700">
             Siddaganga Hi-Tech Diagnostics Center offers routine and specialist lab tests with clear guidance, easy
             contact, and patient-friendly service.
@@ -116,101 +184,43 @@
 
           <div class="mt-8 flex flex-wrap gap-3">
             <a href="#contact"
-              class="rounded-2xl bg-red-700 px-6 py-3 text-sm font-bold text-white shadow-soft hover:bg-red-800">Book /
-              Enquire</a>
+              class="rounded-2xl bg-red-700 px-6 py-3 text-sm font-bold text-white shadow-soft hover:bg-red-800">
+              Book / Enquire
+            </a>
             <a href="#services"
-              class="rounded-2xl border border-zinc-300 px-6 py-3 text-sm font-bold hover:border-zinc-400">View
-              Services</a>
+              class="rounded-2xl border border-zinc-300 px-6 py-3 text-sm font-bold hover:border-zinc-400">
+              View Services
+            </a>
           </div>
 
           <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl">
-            <div class="rounded-2xl border border-zinc-200 bg-white p-4 shadow-soft">
-              <p class="text-xs text-zinc-500">Phone</p>
-              <p class="mt-1 font-bold">08192 200377</p>
-            </div>
-            <div class="rounded-2xl border border-zinc-200 bg-white p-4 shadow-soft">
-              <p class="text-xs text-zinc-500">WhatsApp</p>
-              <p class="mt-1 font-bold">8618404638</p>
-            </div>
-            <div class="rounded-2xl border border-zinc-200 bg-white p-4 shadow-soft">
-              <p class="text-xs text-zinc-500">Mon–Sat</p>
-              <p class="mt-1 font-bold">7 AM – 9 PM</p>
-            </div>
-            <div class="rounded-2xl border border-zinc-200 bg-white p-4 shadow-soft">
-              <p class="text-xs text-zinc-500">Sunday</p>
-              <p class="mt-1 font-bold">7 AM – 1 PM</p>
-            </div>
           </div>
         </div>
 
+        <!-- Right -->
         <div class="rounded-3xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-soft">
-          <p class="text-sm font-bold uppercase tracking-wide text-red-700">Quick Info</p>
-          <div class="mt-5 space-y-5 text-sm text-zinc-700">
-            <div>
-              <p class="font-semibold text-zinc-900">Address</p>
-              <p class="mt-1 leading-7">#352/2A, 9th Cross, P.J. Extension, Davanagere – 02</p>
-            </div>
-            <div>
-              <p class="font-semibold text-zinc-900">Patient Note</p>
-              <p class="mt-1 leading-7">For fasting blood sugar, glucose tolerance, cholesterol, HDL and triglycerides,
-                come on an empty stomach after 7:00 AM. Only a little water may be taken.</p>
-            </div>
-            <div class="pt-2 flex flex-wrap gap-3">
-              <a href="tel:+919591476003"
-                class="rounded-xl border border-zinc-300 px-4 py-2 font-semibold hover:border-zinc-400">Call Cell</a>
-              <a href="https://wa.me/918618404638" target="_blank" rel="noreferrer"
-                class="rounded-xl bg-emerald-600 px-4 py-2 font-semibold text-white hover:bg-emerald-700">Chat on
-                WhatsApp</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <p class="text-sm font-bold uppercase tracking-wide text-red-700">Quick Enquiry</p>
+          <p class="mt-3 text-sm leading-7 text-zinc-600">
+            Fill this form to send WhastApp message.
+          </p>
 
-  <!-- About -->
-  <section id="about" class="py-16 sm:py-20">
-    <div class="mx-auto max-w-6xl px-4">
-      <div class="grid gap-10 lg:grid-cols-2 items-start">
-        <div>
-          <p class="text-sm font-bold uppercase tracking-wide text-red-700">About the lab</p>
-          <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Trusted lab services for your health.</h2>
-          <p class="mt-5 text-zinc-700 leading-8">
-            Siddaganga Hi-Tech Diagnostics Center provides routine and special laboratory tests with patient-friendly
-            service, easy contact, and convenient timings.
-          </p>
-          <p class="mt-4 text-zinc-700 leading-8">
-            Siddaganga Hi-Tech Diagnostic Center is a trusted diagnostic lab in Davanagere offering blood tests, thyroid
-            tests, urine tests, diabetes tests and routine health checkups. The lab is located in P.J. Extension,
-            Davanagere and serves patients from across the city with reliable and convenient diagnostic services.
-          </p>
-          <p class="mt-4 text-zinc-700 leading-8">
-            Patients can call or WhatsApp the lab to ask about test availability, fasting instructions, and visit
-            timings.
-          </p>
+          <form id="heroWhatsappForm" class="mt-6 grid gap-3">
+            <input type="text" id="heroName" name="name" required placeholder="Your Name"
+              class="w-full rounded-xl border border-zinc-300 px-4 py-3 outline-none focus:border-red-600" />
+
+            <input type="tel" id="heroPhone" name="phone" required placeholder="Phone Number"
+              class="w-full rounded-xl border border-zinc-300 px-4 py-3 outline-none focus:border-red-600" />
+
+            <textarea id="heroMessage" name="message" rows="4" required placeholder="Message or test enquiry"
+              class="w-full rounded-xl border border-zinc-300 px-4 py-3 outline-none focus:border-red-600"></textarea>
+
+            <button type="submit"
+              class="rounded-xl bg-red-700 px-5 py-3 text-sm font-semibold text-white hover:bg-red-800">
+              Send on WhatsApp
+            </button>
+          </form>
         </div>
 
-        <div class="grid gap-4 sm:grid-cols-2">
-          <div class="rounded-3xl border border-zinc-200 p-6 shadow-soft">
-            <p class="font-bold text-zinc-900">Routine blood tests</p>
-            <p class="mt-2 text-sm leading-7 text-zinc-600">Blood sugar, CBC, thyroid, lipid profile and many other
-              common tests.</p>
-          </div>
-          <div class="rounded-3xl border border-zinc-200 p-6 shadow-soft">
-            <p class="font-bold text-zinc-900">Doctor-referred tests</p>
-            <p class="mt-2 text-sm leading-7 text-zinc-600">Support for tests advised by doctors and consultants.</p>
-          </div>
-          <div class="rounded-3xl border border-zinc-200 p-6 shadow-soft">
-            <p class="font-bold text-zinc-900">Easy enquiry</p>
-            <p class="mt-2 text-sm leading-7 text-zinc-600">Patients can send details directly on WhatsApp without any
-              extra steps.</p>
-          </div>
-          <div class="rounded-3xl border border-zinc-200 p-6 shadow-soft">
-            <p class="font-bold text-zinc-900">Convenient timings</p>
-            <p class="mt-2 text-sm leading-7 text-zinc-600">Open every day with morning to evening service for patients.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -221,7 +231,6 @@
       <div class="max-w-2xl">
         <p class="text-sm font-bold uppercase tracking-wide text-red-700">Services</p>
         <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Laboratory services available</h2>
-        <p class="mt-4 text-zinc-700 leading-8">Below are the main services available at the lab.</p>
       </div>
 
       <div class="mt-10 grid gap-6 lg:grid-cols-2">
@@ -304,13 +313,14 @@
       <div class="grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
         <div>
           <p class="text-sm font-bold uppercase tracking-wide text-red-300">Contact</p>
-          <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Visit or contact the lab</h2>
+
           <div class="mt-8 text-sm sm:text-base">
             <div class="rounded-3xl border border-white/10 bg-white/5 p-6 leading-8">
               <p class="text-zinc-300">Address</p>
-              <p class="mt-1 font-semibold text-white">#352/2A, 9th Cross, P.J. Extension, Davanagere – 02</p>
+              <p class="mt-1 font-semibold text-white">#352/2A, 9th Cross, behind Moti Veerappa College, P.J. Extension,
+                Davanagere – 02</p>
 
-              <p class="mt-5 text-zinc-300">Phone</p>
+              <p class="mt-5 text-zinc-300">Phone/WhatsApp</p>
               <p class="mt-1 font-semibold text-white">08192 200377 / 9591476003</p>
 
               <p class="mt-5 text-zinc-300">WhatsApp</p>
@@ -322,44 +332,14 @@
             </div>
           </div>
         </div>
-
-        <div class="space-y-4">
-          <div class="rounded-3xl bg-white p-6 sm:p-8 text-zinc-900 shadow-soft">
-            <p class="text-sm font-bold uppercase tracking-wide text-red-700">Quick enquiry</p>
-            <h3 class="mt-3 text-2xl font-black tracking-tight">Send a simple enquiry</h3>
-            <form id="whatsappForm" class="mt-6 grid gap-3">
-              <input type="text" id="name" name="name" required placeholder="Your Name"
-                class="w-full rounded-xl border border-zinc-300 px-4 py-3 outline-none focus:border-red-600" />
-              <input type="tel" id="phone" name="phone" required placeholder="Phone Number"
-                class="w-full rounded-xl border border-zinc-300 px-4 py-3 outline-none focus:border-red-600" />
-              <textarea id="message" name="message" rows="4" required placeholder="Message or test enquiry"
-                class="w-full rounded-xl border border-zinc-300 px-4 py-3 outline-none focus:border-red-600"></textarea>
-              <button type="submit"
-                class="rounded-xl bg-red-700 px-5 py-3 text-sm font-semibold text-white hover:bg-red-800">Send Details
-                on WhatsApp</button>
-            </form>
-          </div>
-
-          <div class="rounded-3xl overflow-hidden border border-white/10 bg-white/5">
-            <div class="p-4 border-b border-white/10">
-              <p class="font-semibold">Map</p>
-              <p class="mt-1 text-xs text-zinc-300">Replace with the exact Google Maps embed from the client’s location
-                QR.</p>
-            </div>
-            <div class="aspect-[16/10]">
-              <iframe title="Siddaganga Hi-Tech Diagnostics Center Map" class="h-full w-full" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps?q=P.J.%20Extension%20Davanagere&output=embed"></iframe>
-            </div>
-          </div>
-        </div>
       </div>
+    </div>
 
-      <footer
-        class="mt-12 border-t border-white/10 pt-6 flex flex-col gap-2 text-sm text-zinc-400 sm:flex-row sm:items-center sm:justify-between">
-        <p>© <span id="year"></span> Siddaganga Hi-Tech Diagnostics Center</p>
-        <p>Website by SidTech</p>
-      </footer>
+    <footer
+      class="mt-12 border-t border-white/10 pt-6 flex flex-col gap-2 text-sm text-zinc-400 sm:flex-row sm:items-center sm:justify-between">
+      <p>© <span id="year"></span> Siddaganga Hi-Tech Diagnostics Center</p>
+      <p>Website by SidTech</p>
+    </footer>
     </div>
   </section>
 
@@ -367,10 +347,13 @@
   <div class="fixed bottom-3 left-0 right-0 z-50 px-3 md:hidden">
     <div class="mx-auto max-w-md rounded-2xl border border-zinc-200 bg-white p-2 shadow-soft">
       <div class="grid grid-cols-2 gap-2">
-        <a href="tel:+918192200377"
-          class="rounded-xl border border-zinc-300 py-3 text-center text-sm font-bold">Call</a>
+        <a href="tel:+918192200377" class="rounded-xl border border-zinc-300 py-3 text-center text-sm font-bold">
+          Call
+        </a>
         <a href="https://wa.me/918618404638" target="_blank" rel="noreferrer"
-          class="rounded-xl bg-red-700 py-3 text-center text-sm font-bold text-white">WhatsApp</a>
+          class="rounded-xl bg-red-700 py-3 text-center text-sm font-bold text-white">
+          WhatsApp
+        </a>
       </div>
     </div>
   </div>
@@ -378,10 +361,13 @@
   <script>
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
+
     menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
     mobileMenu?.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
     });
+
     document.getElementById('year').textContent = new Date().getFullYear();
 
     const whatsappForm = document.getElementById('whatsappForm');
@@ -391,6 +377,28 @@
       const name = document.getElementById('name').value.trim();
       const phone = document.getElementById('phone').value.trim();
       const message = document.getElementById('message').value.trim();
+
+      const whatsappNumber = '918618404638';
+      const text = encodeURIComponent(
+        `Hello Siddaganga Hi-Tech Diagnostics Center,
+
+Name: ${name}
+Phone: ${phone}
+Message: ${message}`
+      );
+
+      const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+      window.open(url, '_blank');
+    });
+  </script>
+  <script>
+    const heroWhatsappForm = document.getElementById('heroWhatsappForm');
+    heroWhatsappForm?.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('heroName').value.trim();
+      const phone = document.getElementById('heroPhone').value.trim();
+      const message = document.getElementById('heroMessage').value.trim();
 
       const whatsappNumber = '918618404638';
       const text = encodeURIComponent(
