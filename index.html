@@ -368,14 +368,46 @@
       <p>© <span id="year"></span> Siddaganga Hi-Tech Diagnostics Center</p>
       <p>Website by SidTech</p>
     </footer>
-    </div>
   </section>
 
   <!-- Mobile CTA -->
-  <div class="fixed bottom-3 left-0 right-0 z-50 px-3 md:hidden">
-    <div class="mx-auto max-w-md rounded-2xl border border-zinc-200 bg-white p-2 shadow-soft">
-    </div>
-  </div>
+
+  <script>
+    const heroWhatsappForm = document.getElementById('heroWhatsappForm');
+    heroWhatsappForm?.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('heroName').value.trim();
+      const phone = document.getElementById('heroPhone').value.trim();
+      const message = document.getElementById('heroMessage').value.trim();
+
+      const whatsappNumber = '918618404638';
+      const text = encodeURIComponent(
+        `Hello Siddaganga Hi-Tech Diagnostics Center,
+
+Name: ${name}
+Phone: ${phone}
+Message: ${message}`
+      );
+
+      const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+      window.open(url, '_blank');
+    });
+  </script>
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileMenu?.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
 
   <script>
     const heroWhatsappForm = document.getElementById('heroWhatsappForm');
