@@ -152,11 +152,19 @@
         </div>
       </a>
 
+<<<<<<< HEAD
       <!-- Desktop nav -->
       <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-zinc-700">
         <a href="#about" class="hover:text-red-700 transition">About</a>
         <a href="#services" class="hover:text-red-700 transition">Services</a>
         <a href="#contact" class="hover:text-red-700 transition">Contact</a>
+=======
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-700">
+        <a href="#about" class="hover:text-red-700">About</a>
+        <a href="#services" class="hover:text-red-700">Services</a>
+        <a href="#packages" class="hover:text-red-700">Packages</a>
+        <a href="#contact" class="hover:text-red-700">Contact</a>
+>>>>>>> 326a84bb8af2664c7e5ed79a8cb8acea9240d834
       </nav>
 
       <!-- Actions -->
@@ -264,6 +272,60 @@
           </div>
         </div>
 
+  <section class="py-16 bg-gradient-to-r from-red-700 to-red-900 text-white">
+  <div class="mx-auto max-w-6xl px-4">
+    
+    <div class="rounded-3xl p-8 sm:p-12 bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6">
+      
+      <!-- Left Content -->
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-black">
+          🏠 Home Sample Collection Available
+        </h2>
+        <p class="mt-3 text-white/80 max-w-xl">
+          Book your lab tests from the comfort of your home. Our trained staff will collect samples safely and deliver accurate reports quickly.
+        </p>
+
+        <ul class="mt-4 space-y-1 text-sm text-white/80">
+          <li>✔ Safe & Hygienic Collection</li>
+          <li>✔ Available Across Davanagere</li>
+          <li>✔ Fast Report Delivery</li>
+        </ul>
+      </div>
+
+      <!-- Button -->
+      <div class="flex flex-col gap-3 w-full sm:w-auto">
+        <button onclick="bookHomeCollection()"
+          class="bg-white text-red-700 px-6 py-3 rounded-xl font-bold shadow-md hover:scale-105 transition">
+          Book Home Collection
+        </button>
+
+        <a href="tel:+918192200377"
+          class="text-center border border-white/40 px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">
+          Call Now
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- About -->
+  <section id="about" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="grid gap-10 lg:grid-cols-2 items-start">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-wide text-red-700">About the lab</p>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Trusted lab services for your health.</h2>
+          <p class="mt-5 text-zinc-700 leading-8">
+            Siddaganga Hi-Tech Diagnostics Center provides routine and special laboratory tests with patient-friendly
+            service, easy contact, and convenient timings.
+          </p>
+          <p class="mt-4 text-zinc-700 leading-8">
+            Siddaganga Hi-Tech Diagnostic Center is a trusted diagnostic lab in Davanagere offering blood tests, thyroid
+            tests, urine tests, diabetes tests and routine health checkups. The lab is located in P.J. Extension,
+            Davanagere and serves patients from across the city with reliable and convenient diagnostic services.
         <!-- Right -->
         <div
           class="w-full max-w-lg lg:max-w-none mx-auto lg:mx-0 rounded-3xl border border-zinc-200 bg-white p-5 sm:p-8 shadow-soft">
@@ -375,6 +437,167 @@
     </div>
   </section>
 
+<section id="packages" class="py-20 bg-gradient-to-b from-white to-zinc-50">
+  <div class="mx-auto max-w-6xl px-4">
+    
+    <div class="text-center max-w-2xl mx-auto">
+      <p class="text-sm font-bold uppercase text-red-700">Health Packages</p>
+      <h2 class="mt-3 text-4xl font-black">Complete Health Checkups</h2>
+      <p class="mt-4 text-zinc-600">
+        Choose from our carefully designed health packages for early detection and better health.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- PREMIUM CARD -->
+      <div class="rounded-3xl border bg-white p-6 shadow-soft hover:scale-105 transition relative">
+        
+        <span class="absolute top-4 right-4 bg-red-700 text-white text-xs px-3 py-1 rounded-full">
+          Popular
+        </span>
+
+        <h3 class="text-xl font-bold text-red-700">Diabetes Care Package</h3>
+
+        <ul class="mt-4 space-y-2 text-sm text-zinc-700">
+          <li>✔ Fasting Blood Sugar (FBS)</li>
+          <li>✔ Post Lunch Blood Sugar (PPBS)</li>
+          <li>✔ HbA1c</li>
+          <li>✔ Consultation Guidance</li>
+        </ul>
+
+        <div class="mt-5 flex items-center justify-between">
+          <p class="text-3xl font-black text-zinc-900">₹499</p>
+          <p class="text-xs text-zinc-400">Report in 24 hrs</p>
+        </div>
+
+        <button onclick="bookPackage('Diabetes Care Package')"
+          class="mt-6 w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-[1.02] transition">
+          Schedule via WhatsApp
+        </button>
+      </div>
+
+      <!-- FULL BODY -->
+      <div class="rounded-3xl border bg-white p-6 shadow-soft hover:scale-105 transition">
+        
+        <h3 class="text-xl font-bold text-red-700">Full Body Checkup</h3>
+
+        <ul class="mt-4 space-y-2 text-sm text-zinc-700">
+          <li>✔ CBC (Complete Blood Count)</li>
+          <li>✔ Liver Function Test (LFT)</li>
+          <li>✔ Kidney Function Test (KFT)</li>
+          <li>✔ Lipid Profile</li>
+          <li>✔ Blood Sugar</li>
+        </ul>
+
+        <div class="mt-5 flex items-center justify-between">
+          <p class="text-3xl font-black text-zinc-900">₹999</p>
+          <p class="text-xs text-zinc-400">Best Value</p>
+        </div>
+
+        <button onclick="bookPackage('Full Body Checkup')"
+          class="mt-6 w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-[1.02] transition">
+          Schedule via WhatsApp
+        </button>
+      </div>
+
+      <!-- THYROID -->
+      <div class="rounded-3xl border bg-white p-6 shadow-soft hover:scale-105 transition">
+        
+        <h3 class="text-xl font-bold text-red-700">Thyroid Profile Package</h3>
+
+        <ul class="mt-4 space-y-2 text-sm text-zinc-700">
+          <li>✔ T3</li>
+          <li>✔ T4</li>
+          <li>✔ TSH</li>
+          <li>✔ Doctor Suggested Range Info</li>
+        </ul>
+
+        <div class="mt-6 flex items-end justify-between">
+          <p class="text-3xl font-black text-zinc-900">₹499</p>
+          <p class="text-xs text-zinc-400">All inclusive</p>
+        </div>
+
+        <button onclick="bookPackage('Thyroid Profile Package')"
+          class="mt-6 w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-[1.02] transition">
+          Schedule via WhatsApp
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="why" class="py-16 sm:py-20">
+  <div class="mx-auto max-w-6xl px-4 text-center">
+    <p class="text-sm font-bold uppercase text-red-700">Why Choose Us</p>
+    <h2 class="mt-3 text-3xl font-black">Why Siddaganga Diagnostics?</h2>
+
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      
+      <div class="p-6 border rounded-2xl shadow-soft">
+        <p class="text-2xl">🧪</p>
+        <h3 class="mt-3 font-bold">Accurate Results</h3>
+        <p class="text-sm text-zinc-600 mt-2">High-quality and reliable testing.</p>
+      </div>
+
+      <div class="p-6 border rounded-2xl shadow-soft">
+        <p class="text-2xl">⚡</p>
+        <h3 class="mt-3 font-bold">Fast Reports</h3>
+        <p class="text-sm text-zinc-600 mt-2">Quick turnaround time.</p>
+      </div>
+
+      <div class="p-6 border rounded-2xl shadow-soft">
+        <p class="text-2xl">👨‍⚕️</p>
+        <h3 class="mt-3 font-bold">Expert Staff</h3>
+        <p class="text-sm text-zinc-600 mt-2">Experienced professionals.</p>
+      </div>
+
+      <div class="p-6 border rounded-2xl shadow-soft">
+        <p class="text-2xl">💰</p>
+        <h3 class="mt-3 font-bold">Affordable Pricing</h3>
+        <p class="text-sm text-zinc-600 mt-2">Best prices in Davanagere.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="bg-zinc-50 py-16 sm:py-20">
+  <div class="mx-auto max-w-6xl px-4">
+    <p class="text-sm font-bold text-red-700">Reviews</p>
+    <h2 class="mt-3 text-3xl font-black">What Patients Say</h2>
+
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+      <div class="p-6 border rounded-2xl shadow-soft">
+        <p class="text-yellow-500">★★★★★</p>
+        <p class="mt-3 text-sm text-zinc-600">
+          Very fast and accurate service. Staff is friendly.
+        </p>
+        <p class="mt-3 font-bold">Ravi Kumar</p>
+      </div>
+
+      <div class="p-6 border rounded-2xl shadow-soft">
+        <p class="text-yellow-500">★★★★★</p>
+        <p class="mt-3 text-sm text-zinc-600">
+          Affordable pricing and quick reports.
+        </p>
+        <p class="mt-3 font-bold">Anjali S</p>
+      </div>
+
+      <div class="p-6 border rounded-2xl shadow-soft">
+        <p class="text-yellow-500">★★★★☆</p>
+        <p class="mt-3 text-sm text-zinc-600">
+          Good lab with clean environment.
+        </p>
+        <p class="mt-3 font-bold">Manoj R</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
   <!-- Contact -->
   <section id="contact" class="bg-zinc-900 py-16 sm:py-20 text-white">
     <div class="mx-auto max-w-6xl px-4">
@@ -470,8 +693,36 @@ Message: ${message}`
         menuBtn.setAttribute('aria-expanded', 'false');
       }
     });
+<<<<<<< HEAD
   });
 </script>
+=======
+
+function bookPackage(packageName) {
+  const whatsappNumber = '918618404638';
+  const text = encodeURIComponent(
+    `Hello Siddaganga Hi-Tech Diagnostics Center,
+    I would like to book the ${packageName}.
+    Please let me know available time slots.`
+  );
+  const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+  window.open(url, '_blank');
+}   
+
+function bookHomeCollection() {
+  const phone = "918618404638";
+
+  const message = encodeURIComponent(
+    `Hello Siddaganga Hi-Tech Diagnostics Center,
+    I would like to book a Home Sample Collection.
+    Please share available time slots and details.`
+  );
+
+  window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+}
+
+  </script>
+>>>>>>> 326a84bb8af2664c7e5ed79a8cb8acea9240d834
 </body>
 
 </html>
