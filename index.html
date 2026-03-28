@@ -59,10 +59,10 @@
     }
 
     .ticker-track {
-      display: inline-flex;
-      width: max-content;
-      animation: tickerMove 20s linear infinite;
-    }
+  display: inline-flex;
+  width: max-content;
+  animation: tickerMove 34s linear infinite;
+}
 
     @keyframes tickerMove {
       0% {
@@ -80,29 +80,29 @@
     }
 
     @media (max-width: 767px) {
-  .ticker {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-  }
+      .ticker {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+      }
 
-  .ticker-track {
-    display: inline-flex;
-    width: max-content;
-    animation: tickerMove 18s linear infinite;
-  }
-
-  .ticker-track span {
-    display: inline-block;
-    padding: 0 20px;
-    line-height: 1.4;
-    white-space: nowrap;
-  }
-
-  .ticker-track span.mobile-note {
-    display: inline-block;
-  }
+      .ticker-track {
+  display: inline-flex;
+  width: max-content;
+  animation: tickerMove 30s linear infinite;
 }
+
+      .ticker-track span {
+        display: inline-block;
+        padding: 0 20px;
+        line-height: 1.4;
+        white-space: nowrap;
+      }
+
+      .ticker-track span.mobile-note {
+        display: inline-block;
+      }
+    }
   </style>
 
   <script type="application/ld+json">
@@ -126,98 +126,79 @@
 
 <body class="bg-white text-zinc-900 antialiased">
 
+  <!-- Header -->
   <header class="sticky top-0 z-50 border-b border-zinc-200/80 bg-white/95 backdrop-blur">
-  <div class="mx-auto max-w-6xl px-4 py-3">
-    <div class="flex items-center justify-between gap-3">
-      
-      <!-- Brand -->
-      <a href="#about" class="min-w-0 flex items-center gap-3">
-        <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-white">
-          <img
-            src="assets/img/image.png"
-            alt="Siddaganga Hi-Tech Diagnostics Center Logo"
-            class="h-12 w-auto object-contain"
-          >
-        </div>
+    <div class="mx-auto max-w-6xl px-4 py-3">
+      <div class="flex items-center justify-between gap-3">
 
-        <div class="min-w-0">
-          <p class="text-lg sm:text-3xl font-extrabold tracking-tight text-red-700 leading-[1.05]">
-            <span class="block sm:hidden">Siddaganga Hi-Tech</span>
-            <span class="block sm:hidden">Diagnostics</span>
-            <span class="hidden sm:block whitespace-nowrap">Siddaganga Hi-Tech Diagnostics Center</span>
-          </p>
-          <p class="hidden sm:block text-xs font-medium tracking-wide text-zinc-500 mt-1">
-            Trusted Diagnostics & Laboratory Services
-          </p>
-        </div>
-      </a>
+        <!-- Brand -->
+        <a href="#about" class="min-w-0 flex items-center gap-3">
+          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white shrink-0">
+            <img src="assets/img/image.png" alt="Siddaganga Hi-Tech Diagnostics Center Logo"
+              class="h-10 w-auto object-contain">
+          </div>
 
-<<<<<<< HEAD
-      <!-- Desktop nav -->
-      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-zinc-700">
-        <a href="#about" class="hover:text-red-700 transition">About</a>
-        <a href="#services" class="hover:text-red-700 transition">Services</a>
-        <a href="#contact" class="hover:text-red-700 transition">Contact</a>
-=======
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-700">
-        <a href="#about" class="hover:text-red-700">About</a>
-        <a href="#services" class="hover:text-red-700">Services</a>
-        <a href="#packages" class="hover:text-red-700">Packages</a>
-        <a href="#contact" class="hover:text-red-700">Contact</a>
->>>>>>> 326a84bb8af2664c7e5ed79a8cb8acea9240d834
-      </nav>
-
-      <!-- Actions -->
-      <div class="relative flex items-center gap-2 sm:gap-3">
-        <a
-          href="https://wa.me/918618404638"
-          target="_blank"
-          rel="noreferrer"
-          class="flex h-11 w-11 items-center justify-center rounded-2xl bg-green-500 text-white shadow-md shadow-green-100 transition hover:bg-green-600"
-          title="Chat on WhatsApp"
-          aria-label="Chat on WhatsApp"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="h-5 w-5">
-            <path d="M16.001 3C8.821 3 3 8.82 3 16c0 2.82.92 5.43 2.48 7.55L3 29l5.64-2.39A12.93 12.93 0 0016 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.4c-2.32 0-4.49-.7-6.31-1.9l-.45-.27-3.35 1.42.71-3.46-.29-.46A10.37 10.37 0 015.6 16c0-5.74 4.66-10.4 10.4-10.4S26.4 10.26 26.4 16 21.74 26.4 16 26.4zm5.71-7.77c-.31-.16-1.85-.91-2.13-1.01-.29-.11-.5-.16-.71.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.23-.67.08-.31-.16-1.31-.48-2.49-1.53-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.46-.54.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.54-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.61c-.21 0-.54.08-.83.39-.29.31-1.09 1.06-1.09 2.58s1.12 2.99 1.27 3.2c.16.21 2.2 3.35 5.33 4.69.75.32 1.34.51 1.8.65.76.24 1.46.21 2.01.13.61-.09 1.85-.75 2.11-1.47.26-.72.26-1.34.18-1.47-.08-.13-.29-.21-.6-.36z" />
-          </svg>
+          <div class="min-w-0">
+            <p class="text-lg sm:text-3xl font-extrabold tracking-tight text-red-700 leading-[1.05]">
+              <span class="block sm:hidden">Siddaganga Hi-Tech</span>
+              <span class="block sm:hidden">Diagnostics</span>
+              <span class="hidden sm:block whitespace-nowrap">Siddaganga Hi-Tech Diagnostics Center</span>
+            </p>
+            <p class="hidden sm:block text-xs font-medium tracking-wide text-zinc-500 mt-1">
+              Trusted Diagnostics & Laboratory Services
+            </p>
+          </div>
         </a>
 
-        <button
-          id="menuBtn"
-          type="button"
-          aria-label="Open menu"
-          aria-expanded="false"
-          aria-controls="mobileMenu"
-          class="md:hidden flex h-11 w-11 items-center justify-center rounded-2xl border border-zinc-200 bg-white text-zinc-800 shadow-md shadow-zinc-100"
-        >
-          <span class="sr-only">Open menu</span>
-          <svg id="menuIconOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
-          </svg>
-          <svg id="menuIconClose" xmlns="http://www.w3.org/2000/svg" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
-          </svg>
-        </button>
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-zinc-700">
+          <a href="#about" class="hover:text-red-700 transition">About</a>
+          <a href="#services" class="hover:text-red-700 transition">Services</a>
+          <a href="#packages" class="hover:text-red-700 transition">Packages</a>
+          <a href="#contact" class="hover:text-red-700 transition">Contact</a>
+        </nav>
 
-        <!-- Mobile dropdown -->
-        <div
-          id="mobileMenu"
-          class="hidden absolute right-0 top-full mt-3 w-44 overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-xl shadow-zinc-200/50 md:hidden"
-        >
-          <a href="#about" class="block px-4 py-3 text-sm font-semibold text-zinc-700 hover:bg-red-50 hover:text-red-700">
-            About
+        <!-- Actions -->
+        <div class="relative flex items-center gap-2 sm:gap-3">
+          <a href="https://wa.me/918618404638" target="_blank" rel="noreferrer"
+            class="flex h-11 w-11 items-center justify-center rounded-2xl bg-green-500 text-white shadow-md shadow-green-100 transition hover:bg-green-600"
+            title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="h-5 w-5">
+              <path
+                d="M16.001 3C8.821 3 3 8.82 3 16c0 2.82.92 5.43 2.48 7.55L3 29l5.64-2.39A12.93 12.93 0 0016 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.4c-2.32 0-4.49-.7-6.31-1.9l-.45-.27-3.35 1.42.71-3.46-.29-.46A10.37 10.37 0 015.6 16c0-5.74 4.66-10.4 10.4-10.4S26.4 10.26 26.4 16 21.74 26.4 16 26.4zm5.71-7.77c-.31-.16-1.85-.91-2.13-1.01-.29-.11-.5-.16-.71.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.23-.67.08-.31-.16-1.31-.48-2.49-1.53-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.46-.54.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.54-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.61c-.21 0-.54.08-.83.39-.29.31-1.09 1.06-1.09 2.58s1.12 2.99 1.27 3.2c.16.21 2.2 3.35 5.33 4.69.75.32 1.34.51 1.8.65.76.24 1.46.21 2.01.13.61-.09 1.85-.75 2.11-1.47.26-.72.26-1.34.18-1.47-.08-.13-.29-.21-.6-.36z" />
+            </svg>
           </a>
-          <a href="#services" class="block border-t border-zinc-100 px-4 py-3 text-sm font-semibold text-zinc-700 hover:bg-red-50 hover:text-red-700">
-            Services
-          </a>
-          <a href="#contact" class="block border-t border-zinc-100 px-4 py-3 text-sm font-semibold text-zinc-700 hover:bg-red-50 hover:text-red-700">
-            Contact
-          </a>
+
+          <button id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"
+            class="md:hidden flex h-11 w-11 items-center justify-center rounded-2xl border border-zinc-200 bg-white text-zinc-800 shadow-md shadow-zinc-100">
+            <span class="sr-only">Open menu</span>
+            <svg id="menuIconOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+            <svg id="menuIconClose" xmlns="http://www.w3.org/2000/svg" class="hidden h-6 w-6" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+
+          <!-- Mobile dropdown -->
+          <div id="mobileMenu"
+            class="hidden absolute right-0 top-full mt-3 w-44 overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-xl shadow-zinc-200/50 md:hidden">
+            <a href="#about"
+              class="block px-4 py-3 text-sm font-semibold text-zinc-700 hover:bg-red-50 hover:text-red-700">About</a>
+            <a href="#services"
+              class="block border-t border-zinc-100 px-4 py-3 text-sm font-semibold text-zinc-700 hover:bg-red-50 hover:text-red-700">Services</a>
+            <a href="#packages"
+              class="block border-t border-zinc-100 px-4 py-3 text-sm font-semibold text-zinc-700 hover:bg-red-50 hover:text-red-700">Packages</a>
+            <a href="#contact"
+              class="block border-t border-zinc-100 px-4 py-3 text-sm font-semibold text-zinc-700 hover:bg-red-50 hover:text-red-700">Contact</a>
+          </div>
         </div>
+
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <!-- Hero -->
   <section id="about" class="bg-gradient-to-b from-red-50 to-white">
@@ -226,30 +207,34 @@
 
         <!-- Left -->
         <div class="hero-safe">
-
-          <!-- Patient Note -->
           <div class="mb-4 w-full overflow-hidden rounded-xl border border-red-200 bg-red-50">
-  <div class="flex items-center min-w-0">
-    <div class="shrink-0 bg-red-600 text-white text-[10px] sm:text-xs font-bold px-3 py-2">
-      Note
-    </div>
+            <div class="flex items-center min-w-0">
+              <div class="shrink-0 bg-red-600 text-white text-[10px] sm:text-xs font-bold px-3 py-2">
+                Note
+              </div>
 
-    <div class="min-w-0 flex-1 overflow-hidden">
-      <div class="ticker text-[11px] sm:text-xs text-red-700 py-2">
-        <div class="ticker-track">
-          <span class="mobile-note">ಉಪವಾಸ ಪರೀಕ್ಷೆಗಳು: ಬೆಳಗ್ಗೆ 7 ಗಂಟೆಯ ನಂತರ ಖಾಲಿ ಹೊಟ್ಟೆಯಲ್ಲಿ ಬನ್ನಿ. ನೀರು ಸೇವಿಸಬಹುದು.</span>
-          <span class="mobile-note">Fasting tests: Come on empty stomach after 7 AM. Water can be consumed.</span>
+              <div class="min-w-0 flex-1 overflow-hidden">
+                <div class="ticker text-[11px] sm:text-xs text-red-700 py-2">
+  <div class="ticker-track">
+    <span class="mobile-note">ಉಪವಾಸ ಪರೀಕ್ಷೆಗಳು: ಬೆಳಗ್ಗೆ 7 ಗಂಟೆಯ ನಂತರ ಖಾಲಿ ಹೊಟ್ಟೆಯಲ್ಲಿ ಬನ್ನಿ. ನೀರು ಸೇವಿಸಬಹುದು.</span>
+    <span class="mobile-note">• • •</span>
+    <span class="mobile-note">Fasting tests: Come on empty stomach after 7 AM. Water can be consumed.</span>
+    <span class="mobile-note">• • •</span>
 
-          <span>ಉಪವಾಸ ಪರೀಕ್ಷೆಗಳು: ಬೆಳಗ್ಗೆ 7 ಗಂಟೆಯ ನಂತರ ಖಾಲಿ ಹೊಟ್ಟೆಯಲ್ಲಿ ಬನ್ನಿ. ನೀರು ಸೇವಿಸಬಹುದು.</span>
-          <span>Fasting tests: Come on empty stomach after 7 AM. Water can be consumed.</span>
+    <span>ಉಪವಾಸ ಪರೀಕ್ಷೆಗಳು: ಬೆಳಗ್ಗೆ 7 ಗಂಟೆಯ ನಂತರ ಖಾಲಿ ಹೊಟ್ಟೆಯಲ್ಲಿ ಬನ್ನಿ. ನೀರು ಸೇವಿಸಬಹುದು.</span>
+    <span>• • •</span>
+    <span>Fasting tests: Come on empty stomach after 7 AM. Water can be consumed.</span>
+    <span>• • •</span>
 
-          <span>ಉಪವಾಸ ಪರೀಕ್ಷೆಗಳು: ಬೆಳಗ್ಗೆ 7 ಗಂಟೆಯ ನಂತರ ಖಾಲಿ ಹೊಟ್ಟೆಯಲ್ಲಿ ಬನ್ನಿ. ನೀರು ಸೇವಿಸಬಹುದು.</span>
-          <span>Fasting tests: Come on empty stomach after 7 AM. Water can be consumed.</span>
-        </div>
-      </div>
-    </div>
+    <span>ಉಪವಾಸ ಪರೀಕ್ಷೆಗಳು: ಬೆಳಗ್ಗೆ 7 ಗಂಟೆಯ ನಂತರ ಖಾಲಿ ಹೊಟ್ಟೆಯಲ್ಲಿ ಬನ್ನಿ. ನೀರು ಸೇವಿಸಬಹುದು.</span>
+    <span>• • •</span>
+    <span>Fasting tests: Come on empty stomach after 7 AM. Water can be consumed.</span>
+    <span>• • •</span>
   </div>
 </div>
+              </div>
+            </div>
+          </div>
 
           <h1 class="max-w-3xl text-2xl sm:text-4xl font-semibold tracking-tight leading-tight text-zinc-900">
             Trusted Diagnostics Center in Davanagere
@@ -272,88 +257,46 @@
           </div>
         </div>
 
-  <section class="py-16 bg-gradient-to-r from-red-700 to-red-900 text-white">
-  <div class="mx-auto max-w-6xl px-4">
-    
-    <div class="rounded-3xl p-8 sm:p-12 bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6">
-      
-      <!-- Left Content -->
-      <div>
-        <h2 class="text-2xl sm:text-3xl font-black">
-          🏠 Home Sample Collection Available
-        </h2>
-        <p class="mt-3 text-white/80 max-w-xl">
-          Book your lab tests from the comfort of your home. Our trained staff will collect samples safely and deliver accurate reports quickly.
-        </p>
+        <!-- Right -->
+        <div class="rounded-3xl bg-gradient-to-r from-red-700 to-red-900 p-6 sm:p-8 text-white shadow-soft">
+          <div class="rounded-3xl border border-white/20 bg-white/10 p-6 sm:p-8 backdrop-blur-lg">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+              <div>
+                <h2 class="text-2xl sm:text-3xl font-black">
+                  🏠 Home Sample Collection Available
+                </h2>
+                <p class="mt-3 max-w-xl text-white/85">
+                  Book your lab tests from the comfort of your home. Our trained staff will collect samples safely and
+                  deliver accurate reports quickly.
+                </p>
 
-        <ul class="mt-4 space-y-1 text-sm text-white/80">
-          <li>✔ Safe & Hygienic Collection</li>
-          <li>✔ Available Across Davanagere</li>
-          <li>✔ Fast Report Delivery</li>
-        </ul>
-      </div>
+                <ul class="mt-4 space-y-1 text-sm text-white/85">
+                  <li>✔ Safe & Hygienic Collection</li>
+                  <li>✔ Available Across Davanagere</li>
+                  <li>✔ Fast Report Delivery</li>
+                </ul>
+              </div>
 
-      <!-- Button -->
-      <div class="flex flex-col gap-3 w-full sm:w-auto">
-        <button onclick="bookHomeCollection()"
-          class="bg-white text-red-700 px-6 py-3 rounded-xl font-bold shadow-md hover:scale-105 transition">
-          Book Home Collection
-        </button>
+              <div class="flex w-full flex-col gap-3 sm:w-auto">
+                <button onclick="bookHomeCollection()"
+                  class="rounded-xl bg-white px-6 py-3 font-bold text-red-700 shadow-md transition hover:scale-105">
+                  Book Home Collection
+                </button>
 
-        <a href="tel:+918192200377"
-          class="text-center border border-white/40 px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition">
-          Call Now
-        </a>
+                <a href="tel:+918192200377"
+                  class="rounded-xl border border-white/40 px-6 py-3 text-center font-semibold transition hover:bg-white/10">
+                  Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
-
-  </div>
-</section>
-
-  <!-- About -->
-  <section id="about" class="py-16 sm:py-20">
-    <div class="mx-auto max-w-6xl px-4">
-      <div class="grid gap-10 lg:grid-cols-2 items-start">
-        <div>
-          <p class="text-sm font-bold uppercase tracking-wide text-red-700">About the lab</p>
-          <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Trusted lab services for your health.</h2>
-          <p class="mt-5 text-zinc-700 leading-8">
-            Siddaganga Hi-Tech Diagnostics Center provides routine and special laboratory tests with patient-friendly
-            service, easy contact, and convenient timings.
-          </p>
-          <p class="mt-4 text-zinc-700 leading-8">
-            Siddaganga Hi-Tech Diagnostic Center is a trusted diagnostic lab in Davanagere offering blood tests, thyroid
-            tests, urine tests, diabetes tests and routine health checkups. The lab is located in P.J. Extension,
-            Davanagere and serves patients from across the city with reliable and convenient diagnostic services.
-        <!-- Right -->
-        <div
-          class="w-full max-w-lg lg:max-w-none mx-auto lg:mx-0 rounded-3xl border border-zinc-200 bg-white p-5 sm:p-8 shadow-soft">
-          <p class="text-sm font-bold uppercase tracking-wide text-red-700">Quick Enquiry</p>
-          <p class="mt-3 text-sm leading-6 text-zinc-600">
-            Fill this form to send WhatsApp message.
-          </p>
-
-          <form id="heroWhatsappForm" class="mt-6 grid gap-3">
-            <input type="text" id="heroName" name="name" required placeholder="Your Name"
-              class="w-full rounded-xl border border-zinc-300 px-4 py-3 outline-none focus:border-red-600" />
-
-            <input type="tel" id="heroPhone" name="phone" required placeholder="Phone Number"
-              class="w-full rounded-xl border border-zinc-300 px-4 py-3 outline-none focus:border-red-600" />
-
-            <textarea id="heroMessage" name="message" rows="4" required placeholder="Message or test enquiry"
-              class="w-full rounded-xl border border-zinc-300 px-4 py-3 outline-none focus:border-red-600 resize-none"></textarea>
-
-            <button type="submit"
-              class="w-full block rounded-xl bg-red-700 px-5 py-3 text-sm font-semibold text-white hover:bg-red-800">
-              Send on WhatsApp
-            </button>
-          </form>
-        </div>
-
-      </div>
     </div>
   </section>
+
 
   <!-- Services -->
   <section id="services" class="bg-zinc-50 py-16 sm:py-20 border-y border-zinc-200">
@@ -363,8 +306,7 @@
         <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">Laboratory services available</h2>
       </div>
 
-      <div class="mt-10 grid gap-6 lg:grid-cols-2">
-
+      <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         <div class="rounded-3xl bg-white p-6 shadow-soft border border-zinc-200">
           <h3 class="text-xl font-bold text-red-700">Biochemistry</h3>
           <ul class="mt-4 space-y-2 text-sm text-zinc-700 list-disc list-inside">
@@ -432,195 +374,194 @@
             <li>Testosterone</li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
 
-<section id="packages" class="py-20 bg-gradient-to-b from-white to-zinc-50">
-  <div class="mx-auto max-w-6xl px-4">
-    
-    <div class="text-center max-w-2xl mx-auto">
-      <p class="text-sm font-bold uppercase text-red-700">Health Packages</p>
-      <h2 class="mt-3 text-4xl font-black">Complete Health Checkups</h2>
-      <p class="mt-4 text-zinc-600">
-        Choose from our carefully designed health packages for early detection and better health.
-      </p>
-    </div>
+  <!-- Packages -->
+  <section id="packages" class="py-20 bg-gradient-to-b from-white to-zinc-50">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="text-center max-w-2xl mx-auto">
+        <p class="text-sm font-bold uppercase text-red-700">Health Packages</p>
+        <h2 class="mt-3 text-4xl font-black">Complete Health Checkups</h2>
+        <p class="mt-4 text-zinc-600">
+          Choose from our carefully designed health packages for early detection and better health.
+        </p>
+      </div>
 
-    <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="relative rounded-3xl border bg-white p-6 shadow-soft hover:scale-105 transition">
+          <span class="absolute top-4 right-4 bg-red-700 text-white text-xs px-3 py-1 rounded-full">
+            Popular
+          </span>
 
-      <!-- PREMIUM CARD -->
-      <div class="rounded-3xl border bg-white p-6 shadow-soft hover:scale-105 transition relative">
-        
-        <span class="absolute top-4 right-4 bg-red-700 text-white text-xs px-3 py-1 rounded-full">
-          Popular
-        </span>
+          <h3 class="text-xl font-bold text-red-700">Diabetes Care Package</h3>
 
-        <h3 class="text-xl font-bold text-red-700">Diabetes Care Package</h3>
+          <ul class="mt-4 space-y-2 text-sm text-zinc-700">
+            <li>✔ Fasting Blood Sugar (FBS)</li>
+            <li>✔ Post Lunch Blood Sugar (PPBS)</li>
+            <li>✔ HbA1c</li>
+            <li>✔ Consultation Guidance</li>
+          </ul>
 
-        <ul class="mt-4 space-y-2 text-sm text-zinc-700">
-          <li>✔ Fasting Blood Sugar (FBS)</li>
-          <li>✔ Post Lunch Blood Sugar (PPBS)</li>
-          <li>✔ HbA1c</li>
-          <li>✔ Consultation Guidance</li>
-        </ul>
+          <div class="mt-5 flex items-center justify-between">
+            <p class="text-3xl font-black text-zinc-900">₹499</p>
+            <p class="text-xs text-zinc-400">Report in 24 hrs</p>
+          </div>
 
-        <div class="mt-5 flex items-center justify-between">
-          <p class="text-3xl font-black text-zinc-900">₹499</p>
-          <p class="text-xs text-zinc-400">Report in 24 hrs</p>
+          <button onclick="bookPackage('Diabetes Care Package')"
+            class="mt-6 w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-[1.02] transition">
+            Schedule via WhatsApp
+          </button>
         </div>
 
-        <button onclick="bookPackage('Diabetes Care Package')"
-          class="mt-6 w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-[1.02] transition">
-          Schedule via WhatsApp
-        </button>
-      </div>
+        <div class="rounded-3xl border bg-white p-6 shadow-soft hover:scale-105 transition">
+          <h3 class="text-xl font-bold text-red-700">Full Body Checkup</h3>
 
-      <!-- FULL BODY -->
-      <div class="rounded-3xl border bg-white p-6 shadow-soft hover:scale-105 transition">
-        
-        <h3 class="text-xl font-bold text-red-700">Full Body Checkup</h3>
+          <ul class="mt-4 space-y-2 text-sm text-zinc-700">
+            <li>✔ CBC (Complete Blood Count)</li>
+            <li>✔ Liver Function Test (LFT)</li>
+            <li>✔ Kidney Function Test (KFT)</li>
+            <li>✔ Lipid Profile</li>
+            <li>✔ Blood Sugar</li>
+          </ul>
 
-        <ul class="mt-4 space-y-2 text-sm text-zinc-700">
-          <li>✔ CBC (Complete Blood Count)</li>
-          <li>✔ Liver Function Test (LFT)</li>
-          <li>✔ Kidney Function Test (KFT)</li>
-          <li>✔ Lipid Profile</li>
-          <li>✔ Blood Sugar</li>
-        </ul>
+          <div class="mt-5 flex items-center justify-between">
+            <p class="text-3xl font-black text-zinc-900">₹999</p>
+            <p class="text-xs text-zinc-400">Best Value</p>
+          </div>
 
-        <div class="mt-5 flex items-center justify-between">
-          <p class="text-3xl font-black text-zinc-900">₹999</p>
-          <p class="text-xs text-zinc-400">Best Value</p>
+          <button onclick="bookPackage('Full Body Checkup')"
+            class="mt-6 w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-[1.02] transition">
+            Schedule via WhatsApp
+          </button>
         </div>
 
-        <button onclick="bookPackage('Full Body Checkup')"
-          class="mt-6 w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-[1.02] transition">
-          Schedule via WhatsApp
-        </button>
+        <div class="rounded-3xl border bg-white p-6 shadow-soft hover:scale-105 transition">
+          <h3 class="text-xl font-bold text-red-700">Thyroid Profile Package</h3>
+
+          <ul class="mt-4 space-y-2 text-sm text-zinc-700">
+            <li>✔ T3</li>
+            <li>✔ T4</li>
+            <li>✔ TSH</li>
+            <li>✔ Doctor Suggested Range Info</li>
+          </ul>
+
+          <div class="mt-6 flex items-end justify-between">
+            <p class="text-3xl font-black text-zinc-900">₹499</p>
+            <p class="text-xs text-zinc-400">All inclusive</p>
+          </div>
+
+          <button onclick="bookPackage('Thyroid Profile Package')"
+            class="mt-6 w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-[1.02] transition">
+            Schedule via WhatsApp
+          </button>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <!-- THYROID -->
-      <div class="rounded-3xl border bg-white p-6 shadow-soft hover:scale-105 transition">
-        
-        <h3 class="text-xl font-bold text-red-700">Thyroid Profile Package</h3>
+  <!-- Why choose us -->
+  <section id="why" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-4 text-center">
+      <p class="text-sm font-bold uppercase text-red-700">Why Choose Us</p>
+      <h2 class="mt-3 text-3xl font-black">Why Siddaganga Diagnostics?</h2>
 
-        <ul class="mt-4 space-y-2 text-sm text-zinc-700">
-          <li>✔ T3</li>
-          <li>✔ T4</li>
-          <li>✔ TSH</li>
-          <li>✔ Doctor Suggested Range Info</li>
-        </ul>
-
-        <div class="mt-6 flex items-end justify-between">
-          <p class="text-3xl font-black text-zinc-900">₹499</p>
-          <p class="text-xs text-zinc-400">All inclusive</p>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="p-6 border rounded-2xl shadow-soft bg-white">
+          <p class="text-2xl">🧪</p>
+          <h3 class="mt-3 font-bold">Accurate Results</h3>
+          <p class="text-sm text-zinc-600 mt-2">High-quality and reliable testing.</p>
         </div>
 
-        <button onclick="bookPackage('Thyroid Profile Package')"
-          class="mt-6 w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-3 rounded-xl font-semibold shadow-md hover:shadow-xl hover:scale-[1.02] transition">
-          Schedule via WhatsApp
-        </button>
-      </div>
+        <div class="p-6 border rounded-2xl shadow-soft bg-white">
+          <p class="text-2xl">⚡</p>
+          <h3 class="mt-3 font-bold">Fast Reports</h3>
+          <p class="text-sm text-zinc-600 mt-2">Quick turnaround time.</p>
+        </div>
 
+        <div class="p-6 border rounded-2xl shadow-soft bg-white">
+          <p class="text-2xl">👨‍⚕️</p>
+          <h3 class="mt-3 font-bold">Expert Staff</h3>
+          <p class="text-sm text-zinc-600 mt-2">Experienced professionals.</p>
+        </div>
+
+        <div class="p-6 border rounded-2xl shadow-soft bg-white">
+          <p class="text-2xl">💰</p>
+          <h3 class="mt-3 font-bold">Affordable Pricing</h3>
+          <p class="text-sm text-zinc-600 mt-2">Best prices in Davanagere.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="why" class="py-16 sm:py-20">
-  <div class="mx-auto max-w-6xl px-4 text-center">
-    <p class="text-sm font-bold uppercase text-red-700">Why Choose Us</p>
-    <h2 class="mt-3 text-3xl font-black">Why Siddaganga Diagnostics?</h2>
+  <!-- Reviews -->
+  <section id="reviews" class="bg-zinc-50 py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <p class="text-sm font-bold text-red-700">Reviews</p>
+      <h2 class="mt-3 text-3xl font-black">What Patients Say</h2>
 
-    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      
-      <div class="p-6 border rounded-2xl shadow-soft">
-        <p class="text-2xl">🧪</p>
-        <h3 class="mt-3 font-bold">Accurate Results</h3>
-        <p class="text-sm text-zinc-600 mt-2">High-quality and reliable testing.</p>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="p-6 border rounded-2xl shadow-soft bg-white">
+          <p class="text-yellow-500">★★★★★</p>
+          <p class="mt-3 text-sm text-zinc-600">
+            Very fast and accurate service. Staff is friendly.
+          </p>
+          <p class="mt-3 font-bold">Ravi Kumar</p>
+        </div>
+
+        <div class="p-6 border rounded-2xl shadow-soft bg-white">
+          <p class="text-yellow-500">★★★★★</p>
+          <p class="mt-3 text-sm text-zinc-600">
+            Affordable pricing and quick reports.
+          </p>
+          <p class="mt-3 font-bold">Anjali S</p>
+        </div>
+
+        <div class="p-6 border rounded-2xl shadow-soft bg-white">
+          <p class="text-yellow-500">★★★★☆</p>
+          <p class="mt-3 text-sm text-zinc-600">
+            Good lab with clean environment.
+          </p>
+          <p class="mt-3 font-bold">Manoj R</p>
+        </div>
       </div>
-
-      <div class="p-6 border rounded-2xl shadow-soft">
-        <p class="text-2xl">⚡</p>
-        <h3 class="mt-3 font-bold">Fast Reports</h3>
-        <p class="text-sm text-zinc-600 mt-2">Quick turnaround time.</p>
-      </div>
-
-      <div class="p-6 border rounded-2xl shadow-soft">
-        <p class="text-2xl">👨‍⚕️</p>
-        <h3 class="mt-3 font-bold">Expert Staff</h3>
-        <p class="text-sm text-zinc-600 mt-2">Experienced professionals.</p>
-      </div>
-
-      <div class="p-6 border rounded-2xl shadow-soft">
-        <p class="text-2xl">💰</p>
-        <h3 class="mt-3 font-bold">Affordable Pricing</h3>
-        <p class="text-sm text-zinc-600 mt-2">Best prices in Davanagere.</p>
-      </div>
-
     </div>
-  </div>
-</section>
-
-<section id="reviews" class="bg-zinc-50 py-16 sm:py-20">
-  <div class="mx-auto max-w-6xl px-4">
-    <p class="text-sm font-bold text-red-700">Reviews</p>
-    <h2 class="mt-3 text-3xl font-black">What Patients Say</h2>
-
-    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
-      <div class="p-6 border rounded-2xl shadow-soft">
-        <p class="text-yellow-500">★★★★★</p>
-        <p class="mt-3 text-sm text-zinc-600">
-          Very fast and accurate service. Staff is friendly.
-        </p>
-        <p class="mt-3 font-bold">Ravi Kumar</p>
-      </div>
-
-      <div class="p-6 border rounded-2xl shadow-soft">
-        <p class="text-yellow-500">★★★★★</p>
-        <p class="mt-3 text-sm text-zinc-600">
-          Affordable pricing and quick reports.
-        </p>
-        <p class="mt-3 font-bold">Anjali S</p>
-      </div>
-
-      <div class="p-6 border rounded-2xl shadow-soft">
-        <p class="text-yellow-500">★★★★☆</p>
-        <p class="mt-3 text-sm text-zinc-600">
-          Good lab with clean environment.
-        </p>
-        <p class="mt-3 font-bold">Manoj R</p>
-      </div>
-
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="bg-zinc-900 py-16 sm:py-20 text-white">
-    <div class="mx-auto max-w-6xl px-4">
-      <div class="grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
-        <div>
-          <p class="text-sm font-bold uppercase tracking-wide text-red-300">Contact</p>
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="max-w-2xl">
+      <p class="text-sm font-bold uppercase tracking-wide text-red-300">Contact Us</p>
+    </div>
 
-          <div class="mt-8 text-sm sm:text-base">
-            <div class="rounded-3xl border border-white/10 bg-white/5 p-6 leading-8">
-              <p class="text-zinc-300">Address</p>
-              <p class="mt-1 font-semibold text-white">#352/2A, 9th Cross, behind Moti Veerappa College, P.J. Extension,
-                Davanagere – 02</p>
+    <div class="mt-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+      
+      <!-- Left contact card -->
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-7 shadow-soft">
+        <div class="grid gap-5 text-sm sm:text-base">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wide text-red-300">Address</p>
+            <p class="mt-2 leading-7 font-medium text-white">
+              #352/2A, 9th Cross, behind Moti Veerappa College, P.J. Extension, Davanagere – 02
+            </p>
+          </div>
 
-              <p class="mt-5 text-zinc-300">Phone/WhatsApp</p>
-              <p class="mt-1 font-semibold text-white">08192 200377 / 9591476003</p>
+          <div class="h-px bg-white/10"></div>
 
-              <p class="mt-5 text-zinc-300">WhatsApp</p>
-              <p class="mt-1 font-semibold text-white">8618404638</p>
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wide text-red-300">Phone / WhatsApp</p>
+            <p class="mt-2 leading-7 font-medium text-white">08192 200377 / 9591476003</p>
+            <p class="font-medium text-white">8618404638</p>
+          </div>
 
-              <p class="mt-5 text-zinc-300">Working Hours</p>
-              <p class="mt-1 font-semibold text-white">Mon–Sat: 7:00 AM – 9:00 PM</p>
-              <p class="font-semibold text-white">Sunday: 7:00 AM – 1:00 PM</p>
-            </div>
+          <div class="h-px bg-white/10"></div>
+
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wide text-red-300">Working Hours</p>
+            <p class="mt-2 leading-7 font-medium text-white">Mon–Sat: 7:00 AM – 9:00 PM</p>
+            <p class="font-medium text-white">Sunday: 7:00 AM – 1:00 PM</p>
           </div>
         </div>
       </div>
@@ -629,11 +570,20 @@
     <footer
       class="mt-12 border-t border-white/10 pt-6 flex flex-col gap-2 text-sm text-zinc-400 sm:flex-row sm:items-center sm:justify-between">
       <p>© <span id="year"></span> Siddaganga Hi-Tech Diagnostics Center</p>
-      <p>Website by SidTech</p>
+      <p>
+        Website by
+        <a
+          href="https://sidtech.in"
+          target="_blank"
+          rel="noreferrer"
+          class="font-medium text-white hover:text-red-300 transition"
+        >
+          SidTech
+        </a>
+      </p>
     </footer>
-  </section>
-
-  <!-- Mobile CTA -->
+  </div>
+</section>
 
   <script>
     const heroWhatsappForm = document.getElementById('heroWhatsappForm');
@@ -657,72 +607,72 @@ Message: ${message}`
       window.open(url, '_blank');
     });
   </script>
+
   <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const menuIconOpen = document.getElementById('menuIconOpen');
-    const menuIconClose = document.getElementById('menuIconClose');
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIconOpen = document.getElementById('menuIconOpen');
+      const menuIconClose = document.getElementById('menuIconClose');
+      const yearEl = document.getElementById('year');
 
-    if (!menuBtn || !mobileMenu || !menuIconOpen || !menuIconClose) return;
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
 
-    menuBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
+      if (menuBtn && mobileMenu && menuIconOpen && menuIconClose) {
+        menuBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
 
-      const isHidden = mobileMenu.classList.contains('hidden');
-      mobileMenu.classList.toggle('hidden');
-      menuIconOpen.classList.toggle('hidden');
-      menuIconClose.classList.toggle('hidden');
-      menuBtn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
-    });
+          const isHidden = mobileMenu.classList.contains('hidden');
+          mobileMenu.classList.toggle('hidden');
+          menuIconOpen.classList.toggle('hidden');
+          menuIconClose.classList.toggle('hidden');
+          menuBtn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+        });
 
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        menuIconOpen.classList.remove('hidden');
-        menuIconClose.classList.add('hidden');
-        menuBtn.setAttribute('aria-expanded', 'false');
-      });
-    });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            menuIconOpen.classList.remove('hidden');
+            menuIconClose.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+          });
+        });
 
-    document.addEventListener('click', (e) => {
-      if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
-        mobileMenu.classList.add('hidden');
-        menuIconOpen.classList.remove('hidden');
-        menuIconClose.classList.add('hidden');
-        menuBtn.setAttribute('aria-expanded', 'false');
+        document.addEventListener('click', (e) => {
+          if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+            mobileMenu.classList.add('hidden');
+            menuIconOpen.classList.remove('hidden');
+            menuIconClose.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
       }
     });
-<<<<<<< HEAD
-  });
-</script>
-=======
 
-function bookPackage(packageName) {
-  const whatsappNumber = '918618404638';
-  const text = encodeURIComponent(
-    `Hello Siddaganga Hi-Tech Diagnostics Center,
-    I would like to book the ${packageName}.
-    Please let me know available time slots.`
-  );
-  const url = `https://wa.me/${whatsappNumber}?text=${text}`;
-  window.open(url, '_blank');
-}   
+    function bookPackage(packageName) {
+      const whatsappNumber = '918618404638';
+      const text = encodeURIComponent(
+        `Hello Siddaganga Hi-Tech Diagnostics Center,
+I would like to book the ${packageName}.
+Please let me know available time slots.`
+      );
+      const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+      window.open(url, '_blank');
+    }
 
-function bookHomeCollection() {
-  const phone = "918618404638";
+    function bookHomeCollection() {
+      const phone = '918618404638';
+      const message = encodeURIComponent(
+        `Hello Siddaganga Hi-Tech Diagnostics Center,
+I would like to book a Home Sample Collection.
+Please share available time slots and details.`
+      );
 
-  const message = encodeURIComponent(
-    `Hello Siddaganga Hi-Tech Diagnostics Center,
-    I would like to book a Home Sample Collection.
-    Please share available time slots and details.`
-  );
-
-  window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
-}
-
+      window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+    }
   </script>
->>>>>>> 326a84bb8af2664c7e5ed79a8cb8acea9240d834
 </body>
 
 </html>
